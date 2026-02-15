@@ -1,0 +1,5 @@
+[
+  {"tenant_id":"tenantA","task_id":"T1","asin":"B001","keywords_target":"wireless mouse","product_name":"Demo Mouse","brand":"DemoBrand"},
+  {"tenant_id":"tenantA","task_id":"T2","asin":"B001","keywords_target":"ergonomic mouse","product_name":"Demo Mouse","brand":"DemoBrand"},
+  {"tenant_id":"tenantA","task_id":"T3","asin":"B002","keywords_target":"usb keyboard","product_name":"Demo Keyboard","brand":"KeyBrand"}
+]

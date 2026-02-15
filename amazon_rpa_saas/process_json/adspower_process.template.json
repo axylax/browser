@@ -1,0 +1,14 @@
+{
+  "name": "Amazon RPA SaaS Session Flow",
+  "version": "3.0.0",
+  "nodes": [
+    { "id": "start", "type": "start" },
+    { "id": "fetch_task", "type": "http.request", "url": "/api/tasks/next" },
+    { "id": "open_profile", "type": "adspower.openProfile" },
+    { "id": "entry_route", "type": "script", "script": "automation_core/entry_strategy.js" },
+    { "id": "search", "type": "script", "script": "automation_core/search_engine.js" },
+    { "id": "behavior", "type": "script", "script": "behavior_ai/action_library.js" },
+    { "id": "submit_result", "type": "http.request", "url": "/api/session/result" },
+    { "id": "end", "type": "end" }
+  ]
+}

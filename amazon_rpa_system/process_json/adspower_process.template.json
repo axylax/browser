@@ -1,0 +1,24 @@
+{
+  "name": "Amazon RPA System - Orchestrated Flow",
+  "version": "1.0.0",
+  "description": "Template process for AdsPower RPA Plus integration.",
+  "nodes": [
+    { "id": "start", "type": "start" },
+    { "id": "load_config", "type": "script", "script": "scripts/run.js" },
+    { "id": "open_profile", "type": "adspower.openProfile" },
+    { "id": "entry_strategy", "type": "script", "script": "core_engines/entry_strategy_engine.js" },
+    { "id": "search", "type": "script", "script": "core_engines/search_intelligence_engine.js" },
+    { "id": "decision", "type": "script", "script": "core_engines/decision_engine.js" },
+    { "id": "output", "type": "script", "script": "core_engines/output_engine.js" },
+    { "id": "end", "type": "end" }
+  ],
+  "edges": [
+    ["start", "load_config"],
+    ["load_config", "open_profile"],
+    ["open_profile", "entry_strategy"],
+    ["entry_strategy", "search"],
+    ["search", "decision"],
+    ["decision", "output"],
+    ["output", "end"]
+  ]
+}
