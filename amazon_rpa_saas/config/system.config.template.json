@@ -1,73 +1,14 @@
 {
-  "runtime": {
-    "seed": 20260215,
-    "tenant_mode": "multi"
-  },
-  "entry_weights": {
-    "google_organic": 0.6,
-    "direct_marketplace": 0.4
-  },
-  "search_depth": 5,
-  "advanced_search": true,
-  "random_key_count": {
-    "min": 1,
-    "max": 3
-  },
-  "random_prod_num": {
-    "min": 2,
-    "max": 7
-  },
+
   "random_prod_max_price": 80,
   "random_prod_ratio": 0.35,
   "random_prod_favcart": 0.22,
   "behavior": {
-    "delay_ms": {
-      "min": 200,
-      "max": 3200
-    },
+
     "noise_sigma_ms": 220,
     "attention_shift_min": 0.08,
     "attention_shift_max": 0.43,
     "action_matrix": [
-      {
-        "value": "scroll",
-        "weight": 0.24
-      },
-      {
-        "value": "gallery",
-        "weight": 0.16
-      },
-      {
-        "value": "reviews",
-        "weight": 0.18
-      },
-      {
-        "value": "video",
-        "weight": 0.1
-      },
-      {
-        "value": "anchor_nav",
-        "weight": 0.12
-      },
-      {
-        "value": "random_nav",
-        "weight": 0.2
-      }
-    ]
-  },
-  "integrations": {
-    "google_sheets": {
-      "enabled": true,
-      "webhook_url": ""
-    },
-    "telegram": {
-      "enabled": true,
-      "bot_token": "",
-      "chat_id": ""
-    },
-    "logging": {
-      "activity_log": "./logs/activity.jsonl"
-    },
-    "on_found_only": true
+
   }
 }
