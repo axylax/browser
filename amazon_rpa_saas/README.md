@@ -85,3 +85,15 @@ curl -X POST http://127.0.0.1:8080/api/automation/start \
 # watch realtime stream
 curl -N http://127.0.0.1:8080/events
 ```
+
+
+## Google Sheets + Telegram при FOUND
+
+События в локальный лог пишутся всегда, а во внешние интеграции отправляются только при `found=true` (по флагу `integrations.on_found_only=true`).
+
+Заполните перед запуском:
+- `integrations.google_sheets.webhook_url`
+- `integrations.telegram.bot_token`
+- `integrations.telegram.chat_id`
+
+Файл: `config/system.config.template.json`.

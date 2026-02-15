@@ -61,7 +61,7 @@ class Orchestrator {
 
       this.realtimeHub.emit({ type: 'session_result', ...result });
       await this.integrations.log(result);
-      await this.integrations.notify(result);
+      await this.integrations.publishFound(result);
     }
   }
 }
