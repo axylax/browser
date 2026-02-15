@@ -1,0 +1,16 @@
+[
+  {
+    "task_id": "T-1001",
+    "asin": "B000000001",
+    "product_name": "Sample Product One",
+    "brand": "SampleBrand",
+    "keywords_target": ["sample keyword", "test listing"]
+  },
+  {
+    "task_id": "T-1002",
+    "asin": "B000000002",
+    "product_name": "Sample Product Two",
+    "brand": "DemoBrand",
+    "keywords_target": ["demo product", "brand official"]
+  }
+]
