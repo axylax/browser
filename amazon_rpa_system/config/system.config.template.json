@@ -1,0 +1,48 @@
+{
+  "runtime": {
+    "seed": 42,
+    "dryRun": true
+  },
+  "entryWeights": {
+    "google_organic": 0.55,
+    "direct_marketplace": 0.45
+  },
+  "entryUrls": {
+    "google": ["https://www.google.com"],
+    "marketplace": ["https://www.amazon.com"]
+  },
+  "search": {
+    "minPages": 1,
+    "maxPages": 4
+  },
+  "behavior": {
+    "delayMs": { "min": 250, "max": 2800 },
+    "actionMatrix": [
+      { "value": "scroll", "weight": 0.34 },
+      { "value": "pause", "weight": 0.21 },
+      { "value": "open_related", "weight": 0.19 },
+      { "value": "hover", "weight": 0.26 }
+    ]
+  },
+  "safety": {
+    "disableTransactionalActions": true
+  },
+  "paths": {
+    "tasks": "./config/tasks.sample.json",
+    "profiles": "./config/profiles.sample.json"
+  },
+  "logging": {
+    "activityLog": "./logs/activity.jsonl"
+  },
+  "integrations": {
+    "googleSheets": {
+      "enabled": false,
+      "webhookUrl": ""
+    },
+    "telegram": {
+      "enabled": false,
+      "botToken": "",
+      "chatId": ""
+    }
+  }
+}
