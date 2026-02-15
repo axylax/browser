@@ -28,15 +28,4 @@
     README.md
 ```
 
-## Быстрый запуск (backend demo)
 
-```bash
-node backend/server.js
-```
-
-## Проверка
-
-```bash
-node scripts/validate-config.js ./config/system.config.template.json
-node scripts/smoke-test.js
-```
